@@ -1,0 +1,15 @@
+--- latencytop-0.4/Makefile~	2008-04-22 17:36:08.000000000 +0300
++++ latencytop-0.4/Makefile	2008-10-23 14:48:14.004883306 +0300
+@@ -14,10 +14,10 @@
+ 
+ # We write explicity this "implicit rule"
+ %.o : %.c
+-	gcc -c $(CFLAGS) $(XCFLAGS) $< -o $@
++	$(CC) -c $(CFLAGS) $(XCFLAGS) $< -o $@
+ 
+ latencytop: latencytop.o display.o latencytop.h translate.o Makefile
+-	gcc $(CFLAGS) latencytop.o display.o translate.o $(LDF) -o latencytop 
++	$(CC) $(CFLAGS) latencytop.o display.o translate.o $(LDF) $(LDFLAGS) -o latencytop 
+ 
+ 
+ clean:
