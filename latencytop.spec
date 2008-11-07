@@ -10,6 +10,7 @@ Patch0:		%{name}-make.patch
 URL:		http://www.latencytop.org/
 BuildRequires:	glib2-devel
 BuildRequires:	ncurses-devel
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
