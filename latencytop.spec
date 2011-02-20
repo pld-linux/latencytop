@@ -1,11 +1,11 @@
 Summary:	LatencyTOP: measuring and fixing Linux latency
 Name:		latencytop
-Version:	0.4
-Release:	0.1
+Version:	0.5
+Release:	1
 License:	GPL v2
 Group:		Applications
 Source0:	http://www.latencytop.org/download/%{name}-%{version}.tar.gz
-# Source0-md5:	ad8d107699608b024d697c941371bb37
+# Source0-md5:	73bb3371c6ee0b0e68e25289027e865c
 Patch0:		%{name}-make.patch
 URL:		http://www.latencytop.org/
 BuildRequires:	glib2-devel
